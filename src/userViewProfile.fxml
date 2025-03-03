@@ -72,17 +72,17 @@
       <Separator layoutX="-4.0" layoutY="219.0" prefHeight="3.0" prefWidth="350.0" />
       <ImageView fitHeight="257.0" fitWidth="231.0" layoutX="158.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/tiktokWhiteNBG.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/tiktokWhiteNBG.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="132.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/cb4572f19ab7505d552206ed5dfb3739-removebg-preview.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/cb4572f19ab7505d552206ed5dfb3739-removebg-preview.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="127.0" fitWidth="123.0" layoutX="14.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Word.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/TweetTok%20Logo%20Word.png" />
          </image>
       </ImageView>
       <Separator layoutX="1.0" layoutY="375.0" prefHeight="3.0" prefWidth="350.0" />

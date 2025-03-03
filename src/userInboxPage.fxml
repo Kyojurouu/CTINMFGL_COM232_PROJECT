@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="620.0" fitWidth="351.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/tiktokInboxPage.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/tiktokInboxPage.png" />
          </image>
       </ImageView>
       <TableView fx:id="userFollowUserTable" layoutX="54.0" layoutY="129.0" prefHeight="200.0" prefWidth="242.0">
@@ -50,7 +50,7 @@
       <Label fx:id="displaySearchPronounLabel" layoutX="253.0" layoutY="98.0" text="Pronoun" />
       <ImageView fitHeight="63.0" fitWidth="69.0" layoutX="288.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Main.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/TweetTok%20Logo%20Main.png" />
          </image>
       </ImageView>
    </children>

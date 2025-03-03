@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="565.0" fitWidth="438.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/tiktokUserFollow.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/tiktokUserFollow.png" />
          </image>
       </ImageView>
       <TextField fx:id="userUsernameFollowField" layoutX="109.0" layoutY="85.0" prefHeight="26.0" prefWidth="188.0" />
@@ -34,7 +34,7 @@
       <Label fx:id="userFollowUnFollowUsernameLabel" layoutX="14.0" layoutY="89.0" text="Follow/Unfollow:" />
       <ImageView fitHeight="79.0" fitWidth="90.0" layoutX="233.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Main.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/TweetTok%20Logo%20Main.png" />
          </image>
       </ImageView>
       <TableView fx:id="userFollowUserTable" layoutX="37.0" layoutY="177.0" prefHeight="164.0" prefWidth="252.0">

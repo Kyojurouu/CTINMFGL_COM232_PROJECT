@@ -13,7 +13,7 @@
    <children>
       <ImageView fitHeight="281.0" fitWidth="535.0" layoutX="33.0" layoutY="-53.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Word.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/TweetTok%20Logo%20Word.png" />
          </image>
       </ImageView>
       <TextField fx:id="emailField" layoutX="101.0" layoutY="158.0" prefHeight="25.0" prefWidth="187.0" />
@@ -38,12 +38,12 @@
       <Label layoutX="45.0" layoutY="327.0" text="Pronoun:" />
       <ImageView fitHeight="247.0" fitWidth="262.0" layoutX="-90.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Main.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/TweetTok%20Logo%20Main.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="178.0" fitWidth="150.0" layoutX="214.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/tiktokWhiteNBG.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/tiktokWhiteNBG.png" />
          </image>
       </ImageView>
       <Label layoutX="117.0" layoutY="132.0" text="USER SIGN UP">

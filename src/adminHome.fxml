@@ -61,7 +61,7 @@
       <children>
             <ImageView fitHeight="830.0" fitWidth="1124.0" layoutX="-1.0" layoutY="-136.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Admin%20Home%20Page.png" />
+                  <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/TweetTok%20Admin%20Home%20Page.png" />
                </image>
             </ImageView>
         <Label fx:id="adminWelcome" alignment="CENTER" layoutX="478.0" layoutY="24.0" prefHeight="35.0" prefWidth="255.0" style="&#10;" text="Welcome!" textAlignment="CENTER" textFill="#282828" wrapText="false">
@@ -150,7 +150,7 @@
                <graphic>
                   <ImageView fitHeight="53.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Main.png" />
+                        <Image url="@../UI/TweetTok%20Logo%20Main.png" />
                      </image>
                   </ImageView>
                </graphic></Button>

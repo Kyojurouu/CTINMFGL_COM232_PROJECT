@@ -13,7 +13,7 @@
    <children>
       <ImageView fitHeight="640.0" fitWidth="350.0" layoutY="-45.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Start%20Select%20Page.png" />
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/TweetTok%20Start%20Select%20Page.png" />
          </image>
       </ImageView>
       <Button fx:id="userLoginButton" layoutX="126.0" layoutY="345.0" mnemonicParsing="false" onAction="#userLoginButton" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: ff0050;" text="Login" textFill="#eeeeee">
@@ -25,7 +25,7 @@
          <graphic>
             <ImageView fitHeight="37.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/tiktokWhiteNBG.png" />
+                  <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/tiktokWhiteNBG.png" />
                </image>
             </ImageView>
          </graphic></Button>
