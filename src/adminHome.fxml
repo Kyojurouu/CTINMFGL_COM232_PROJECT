@@ -150,7 +150,7 @@
                <graphic>
                   <ImageView fitHeight="53.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../UI/TweetTok%20Logo%20Main.png" />
+                        <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/Main_InfoMan/UI/TweetTok%20Logo%20Main.png" />
                      </image>
                   </ImageView>
                </graphic></Button>
