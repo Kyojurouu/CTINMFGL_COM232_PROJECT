@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInboxPageController">
+   <children>
+      <ImageView fitHeight="620.0" fitWidth="351.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/tiktokInboxPage.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="userFollowUserTable" layoutX="54.0" layoutY="129.0" prefHeight="200.0" prefWidth="242.0">
+        <columns>
+          <TableColumn fx:id="FollowIDCol" prefWidth="39.99996566772461" text="Follow ID" />
+          <TableColumn fx:id="userNameIDFollowCol" prefWidth="100.00003051757812" text="UserNameID" />
+            <TableColumn fx:id="otherUserNameIDFollowCol" prefWidth="103.99995422363281" text="UserNameID" />
+        </columns>
+      </TableView>
+      <TableView fx:id="userFollowerTable" layoutX="53.0" layoutY="339.0" prefHeight="200.0" prefWidth="242.0">
+        <columns>
+          <TableColumn fx:id="FollowerIDCol" prefWidth="42.4000244140625" text="Follow ID" />
+          <TableColumn fx:id="followerUserNameIDCol" prefWidth="96.79999542236328" text="UserNameID" />
+            <TableColumn fx:id="followerFollowUserNameIDCol" prefWidth="101.5999755859375" text="UserNameID" />
+        </columns>
+      </TableView>
+      <Label fx:id="displayUserNameID" layoutX="31.0" layoutY="14.0" text="Username:" />
+      <Button fx:id="userReturnHomeButton" layoutX="27.0" layoutY="560.0" mnemonicParsing="false" onAction="#userReturnHomeButtonHandler" style="-fx-background-color: #ff0050;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userSearchUserField" layoutX="31.0" layoutY="38.0" />
+      <Button fx:id="userSearchUserButton" layoutX="192.0" layoutY="38.0" mnemonicParsing="false" onAction="#userSearchUserButtonHandler" style="-fx-background-color: #00f2ea;" text="Search" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="displaySearchUsernameLabel" layoutX="31.0" layoutY="74.0" text="Username" />
+      <Label fx:id="displaySearchFnameLabel" layoutX="146.0" layoutY="74.0" text="First Name" />
+      <Label fx:id="displaySearchLnameLabel" layoutX="253.0" layoutY="74.0" text="Last Name" />
+      <Label fx:id="displaySearchEmailLabel" layoutX="31.0" layoutY="98.0" text="Email" />
+      <Label fx:id="displaySearchPronounLabel" layoutX="253.0" layoutY="98.0" text="Pronoun" />
+      <ImageView fitHeight="63.0" fitWidth="69.0" layoutX="288.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Main.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

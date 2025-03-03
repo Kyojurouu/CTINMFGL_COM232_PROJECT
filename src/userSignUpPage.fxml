@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userSignUpPageController">
+   <children>
+      <ImageView fitHeight="281.0" fitWidth="535.0" layoutX="33.0" layoutY="-53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Word.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="emailField" layoutX="101.0" layoutY="158.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="userNameField" layoutX="101.0" layoutY="190.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="FnameField" layoutX="102.0" layoutY="224.0" prefHeight="25.0" prefWidth="187.0" />
+      <TextField fx:id="LnameField" layoutX="101.0" layoutY="258.0" prefHeight="25.0" prefWidth="187.0" />
+      <Label layoutX="64.0" layoutY="162.0" text="Email:" textFill="#ff0050" />
+      <Label layoutX="41.0" layoutY="194.0" text="Username:" />
+      <Label layoutX="39.0" layoutY="228.0" text="First Name:" textFill="#ff0050" />
+      <Label layoutX="39.0" layoutY="262.0" text="Last Name:" />
+      <PasswordField fx:id="passwordField" layoutX="101.0" layoutY="289.0" />
+      <Label layoutX="43.0" layoutY="293.0" text="Password:" textFill="#ff0050" />
+      <Button fx:id="SignUpButton" layoutX="164.0" layoutY="363.0" mnemonicParsing="false" onAction="#SignUpButtonHandler" style="-fx-background-color: #00f2ea;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="returntotiktokPageButton" layoutX="99.0" layoutY="363.0" mnemonicParsing="false" onAction="#returntotiktokPageButtonHandler" style="-fx-background-color: #ff0050;" text="Return" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="pronounField" layoutX="102.0" layoutY="323.0" prefHeight="26.0" prefWidth="71.0" />
+      <Label layoutX="45.0" layoutY="327.0" text="Pronoun:" />
+      <ImageView fitHeight="247.0" fitWidth="262.0" layoutX="-90.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Main.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="178.0" fitWidth="150.0" layoutX="214.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/tiktokWhiteNBG.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="117.0" layoutY="132.0" text="USER SIGN UP">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

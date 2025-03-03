@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tiktokUserFollowController">
+   <children>
+      <ImageView fitHeight="565.0" fitWidth="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/tiktokUserFollow.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userUsernameFollowField" layoutX="109.0" layoutY="85.0" prefHeight="26.0" prefWidth="188.0" />
+      <Label fx:id="userFollowUsernameLabel" layoutX="48.0" layoutY="54.0" text="Username:" />
+      <Button fx:id="userFollowButton" layoutX="82.0" layoutY="123.0" mnemonicParsing="false" onAction="#userFollowButtonHandler" style="-fx-background-color: #00f2ea;" text="Follow" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="userUnfollowButton" layoutX="145.0" layoutY="123.0" mnemonicParsing="false" onAction="#userUnfollowButtonHandler" style="-fx-background-color: #ff0050;" text="Unfollow" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="userFollowReturnButton" layoutX="225.0" layoutY="123.0" mnemonicParsing="false" onAction="#userFollowReturnButtonHandler" style="-fx-background-color: #000000;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label fx:id="userFollowUnFollowUsernameLabel" layoutX="14.0" layoutY="89.0" text="Follow/Unfollow:" />
+      <ImageView fitHeight="79.0" fitWidth="90.0" layoutX="233.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Main.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="userFollowUserTable" layoutX="37.0" layoutY="177.0" prefHeight="164.0" prefWidth="252.0">
+        <columns>
+          <TableColumn fx:id="FollowIDCol" prefWidth="23.20001220703125" text="Follow ID" />
+          <TableColumn fx:id="userNameIDFollowCol" prefWidth="129.59996795654297" text="UserNameID" />
+            <TableColumn fx:id="otherUserNameIDFollowCol" prefWidth="96.79991149902344" text="UserNameID" />
+        </columns>
+      </TableView>
+      <TableView fx:id="userFollowerTable" layoutX="37.0" layoutY="369.0" prefHeight="164.0" prefWidth="252.0">
+        <columns>
+          <TableColumn fx:id="FollowerIDCol" prefWidth="28.0" text="Follow ID" />
+          <TableColumn fx:id="followerUserNameIDCol" prefWidth="128.79999542236328" text="UserNameID" />
+            <TableColumn fx:id="followerFollowUserNameIDCol" prefWidth="95.20001220703125" text="UserNameID" />
+        </columns>
+      </TableView>
+      <Label layoutX="104.0" layoutY="351.0" text="Followers">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="159.0" text="Following">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="720.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminHomeController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="700.0" prefWidth="1200.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="830.0" fitWidth="1124.0" layoutX="-1.0" layoutY="-136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Admin%20Home%20Page.png" />
+               </image>
+            </ImageView>
+        <Label fx:id="adminWelcome" alignment="CENTER" layoutX="478.0" layoutY="24.0" prefHeight="35.0" prefWidth="255.0" style="&#10;" text="Welcome!" textAlignment="CENTER" textFill="#282828" wrapText="false">
+          <font>
+            <Font size="24.0" />
+          </font>
+        </Label>
+            <TableView fx:id="adminTable" layoutX="758.0" layoutY="34.0" prefHeight="166.0" prefWidth="331.0">
+              <columns>
+                <TableColumn fx:id="adminIDCol" prefWidth="35.0" text="id" />
+                <TableColumn fx:id="adminUsernameCol" prefWidth="115.0" text="username" />
+                  <TableColumn fx:id="adminPasswordCol" prefWidth="75.0" text="password" />
+                  <TableColumn fx:id="adminAccCreatedCol" prefWidth="105.0" text="account created" />
+              </columns>
+            </TableView>
+            <Button fx:id="adminCreateButton" layoutX="553.0" layoutY="155.0" mnemonicParsing="false" onAction="#createadminUser" style="-fx-background-color: #000000;" text="Create" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="adminUpdateButton" layoutX="613.0" layoutY="155.0" mnemonicParsing="false" onAction="#updateadminUser" style="-fx-background-color: #000000;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="adminDeleteButton" layoutX="682.0" layoutY="155.0" mnemonicParsing="false" onAction="#deleteadminUser" style="-fx-background-color: #000000;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <TextField fx:id="addAdminUserField" layoutX="579.0" layoutY="79.0" />
+            <PasswordField fx:id="addAdminPasswordField" layoutX="579.0" layoutY="115.0" />
+            <Label fx:id="addAdminUser" layoutX="504.0" layoutY="83.0" prefHeight="17.0" prefWidth="61.0" text="Username:" />
+            <Label fx:id="addAdminPassword" layoutX="504.0" layoutY="119.0" prefHeight="17.0" prefWidth="61.0" text="Password:" />
+            <Label layoutX="867.0" layoutY="7.0" text="Admin Users:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="usersTable" layoutX="22.0" layoutY="237.0" prefHeight="284.0" prefWidth="610.0">
+              <columns>
+                <TableColumn fx:id="UserNameIDCol" text="UserNameID" />
+                <TableColumn fx:id="FirstNameCol" prefWidth="74.0" text="FirstName" />
+                  <TableColumn fx:id="LastNameCol" prefWidth="86.39996337890625" text="LastName" />
+                  <TableColumn fx:id="EmailCol" prefWidth="196.800048828125" text="Email" />
+                  <TableColumn fx:id="UserPasswordCol" prefWidth="96.79998779296875" text="UserPassword" />
+                  <TableColumn fx:id="PronounCol" prefWidth="64.0" text="Pronoun" />
+                  <TableColumn fx:id="UserFollowingCol" minWidth="4.0" prefWidth="4.0" text="UserFollowing" />
+                  <TableColumn fx:id="UserFollowersCol" minWidth="8.800048828125" prefWidth="8.800048828125" text="UserFollowers" />
+              </columns>
+            </TableView>
+            <Button fx:id="userDeleteButton" layoutX="168.0" layoutY="614.0" mnemonicParsing="false" onAction="#deletetiktokUser" style="-fx-background-color: #ff0050;" text="Delete" textFill="#f7f6f6">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="updateFirstNameField" layoutX="278.0" layoutY="532.0" prefHeight="26.0" prefWidth="150.0" />
+            <TextField fx:id="updateLastNameField" layoutX="484.0" layoutY="532.0" />
+            <TextField fx:id="updateEmailField" layoutX="48.0" layoutY="572.0" />
+            <TextField fx:id="updateUserPasswordField" layoutX="280.0" layoutY="572.0" />
+            <TextField fx:id="updatePronounField" layoutX="481.0" layoutY="572.0" />
+            <Label layoutX="220.0" layoutY="536.0" text="FirstName:" />
+            <Label layoutX="429.0" layoutY="536.0" text="LastName:" />
+            <Label layoutX="13.0" layoutY="576.0" text="Email:" />
+            <Label layoutX="201.0" layoutY="576.0" text="UserPassword:" />
+            <Label layoutX="431.0" layoutY="576.0" text="Pronoun:" />
+            <Button fx:id="userUpdateButton" layoutX="103.0" layoutY="614.0" mnemonicParsing="false" onAction="#updatetiktokUser" style="-fx-background-color: #00f2ea;" text="Update" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <TableView fx:id="usersPostTable" layoutX="656.0" layoutY="239.0" prefHeight="200.0" prefWidth="397.0">
+              <columns>
+                <TableColumn fx:id="userPostIDCol" prefWidth="87.20001220703125" text="PostID" />
+                <TableColumn fx:id="userNameIDPostCol" prefWidth="142.4000244140625" text="UserNameID" />
+                  <TableColumn fx:id="userPostCol" prefWidth="93.59991455078125" text="Post" />
+                  <TableColumn fx:id="userPostDateCol" prefWidth="75.0" text="PostDate" />
+              </columns>
+            </TableView>
+            <Button fx:id="userPostUpdateButton" layoutX="921.0" layoutY="448.0" mnemonicParsing="false" onAction="#updatetiktokUsersPost" style="-fx-background-color: #00f2ea;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="userDeletePostButton" layoutX="986.0" layoutY="448.0" mnemonicParsing="false" onAction="#deletetiktokUsersPost" style="-fx-background-color: #ff0050;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <TextField fx:id="userUpdatePostField" layoutX="766.0" layoutY="448.0" />
+            <Button fx:id="returntoAdminLoginButton" layoutX="1005.0" layoutY="616.0" mnemonicParsing="false" onAction="#returntoAdminLogin" prefHeight="56.0" prefWidth="77.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/JM/OneDrive/Desktop/Evangelista%20-%20InfoMan%20Online/UI/TweetTok%20Logo%20Main.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TableView fx:id="userFollowUserTable" layoutX="651.0" layoutY="540.0" prefHeight="138.0" prefWidth="274.0">
+              <columns>
+                <TableColumn fx:id="FollowIDCol" prefWidth="71.99993896484375" text="FollowID" />
+                <TableColumn fx:id="userNameIDFollowCol" minWidth="0.0" prefWidth="98.4000244140625" text="UserNameID" />
+                  <TableColumn fx:id="otherUserNameIDFollowCol" prefWidth="103.19989013671875" text="UserNameID" />
+              </columns>
+            </TableView>
+            <Label layoutX="66.0" layoutY="206.0" text="Users Table:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="661.0" layoutY="213.0" text="Users Post Table:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="663.0" layoutY="507.0" text="User Following User Table:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="userDeleteFollowButton" layoutX="933.0" layoutY="652.0" mnemonicParsing="false" onAction="#deletetiktokUserFollow" style="-fx-background-color: #ff0050;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="669.0" layoutY="452.0" text="Update User Post:" />
+            <TextField fx:id="createUsernameField" layoutX="67.0" layoutY="532.0" />
+            <Label layoutX="10.0" layoutY="536.0" text="Username:" />
+            <Button fx:id="createNewUserButton" layoutX="43.0" layoutY="614.0" mnemonicParsing="false" onAction="#addtiktokUser" style="-fx-background-color: #000000;" text="Create" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
