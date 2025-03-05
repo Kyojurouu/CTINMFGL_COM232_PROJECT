@@ -184,6 +184,21 @@ public class adminHomeController {
 
     }
 
+    @FXML
+    private void initialize() {
+    usersTable.setOnMouseClicked(event1 -> {
+        tiktokUsers selectedUser = usersTable.getSelectionModel().getSelectedItem();
+        if (selectedUser != null) {
+            createUsernameField.setText(selectedUser.getUserNameID());
+            updateFirstNameField.setText(selectedUser.getFirstName());
+            updateLastNameField.setText(selectedUser.getLastName());
+            updateEmailField.setText(selectedUser.getEmail());
+            updateUserPasswordField.setText(selectedUser.getUserPassword());
+            updatePronounField.setText(selectedUser.getPronoun());
+        }
+    });
+}
+
     public void initializeCol() {
         adminIDCol.setCellValueFactory(new PropertyValueFactory<>("adminID"));
         adminUsernameCol.setCellValueFactory(new PropertyValueFactory<>("adminUsername"));
