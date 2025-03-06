@@ -451,17 +451,12 @@ public class DatabaseHandler {
     }
 
     public boolean addTikTokUserFollow(tiktokUserFollow follow) {
-        String followQuery = "INSERT INTO tiktokUserFollow (UserNameID, FollowUserNameID) VALUES (?, ?)";
-        // String incrementFollowingQuery = "UPDATE tiktokUsers SET UserFollowing = UserFollowing + 1 WHERE UserNameID = ?";
-        // String incrementFollowersQuery = "UPDATE tiktokUsers SET UserFollowers = UserFollowers + 1 WHERE UserNameID = ?";
-        
+        String followQuery = "INSERT INTO tiktokUserFollow (UserNameID, FollowUserNameID) VALUES (?, ?)";     
         try (Connection connection = getDBConnection()) {
             connection.setAutoCommit(false);
     
             try (PreparedStatement followStatement = connection.prepareStatement(followQuery);
-                //  PreparedStatement incrementFollowingStatement = connection.prepareStatement(incrementFollowingQuery);
-                //  PreparedStatement incrementFollowersStatement = connection.prepareStatement(incrementFollowersQuery)
-                 
+              
                  ) 
                  {
     
@@ -469,14 +464,7 @@ public class DatabaseHandler {
                 followStatement.setString(2, follow.getFollowUserNameID());
                 followStatement.executeUpdate();
     
-                // incrementFollowingStatement.setString(1, follow.getUserNameID());
-                // incrementFollowingStatement.executeUpdate();
-    
-                // incrementFollowersStatement.setString(1, follow.getFollowUserNameID());
-                // incrementFollowersStatement.executeUpdate();
-    
                 connection.commit();
-                // System.out.println("Follow added successfully and counts updated.");
                 return true;
             } catch (SQLException e) {
                 connection.rollback();
@@ -491,26 +479,19 @@ public class DatabaseHandler {
 
     public boolean deleteTikTokUserFollow(tiktokUserFollow follow) {
         String deleteFollowQuery = "DELETE FROM tiktokUserFollow WHERE UserNameID = ? AND FollowUserNameID = ?";
-        // String decrementFollowingQuery = "UPDATE tiktokUsers SET UserFollowing = UserFollowing - 1 WHERE UserNameID = ?";
-        // String decrementFollowersQuery = "UPDATE tiktokUsers SET UserFollowers = UserFollowers - 1 WHERE UserNameID = ?";
+
     
         try (Connection connection = getDBConnection()) {
             connection.setAutoCommit(false);
     
             try (PreparedStatement deleteFollowStmt = connection.prepareStatement(deleteFollowQuery);
-                //  PreparedStatement decrementFollowingStmt = connection.prepareStatement(decrementFollowingQuery);
-                //  PreparedStatement decrementFollowersStmt = connection.prepareStatement(decrementFollowersQuery)
                  
                  ) {
     
                 deleteFollowStmt.setString(1, follow.getUserNameID());
                 deleteFollowStmt.setString(2, follow.getFollowUserNameID());
-                // decrementFollowingStmt.setString(1, follow.getUserNameID());
-                // decrementFollowersStmt.setString(1, follow.getFollowUserNameID());
     
                 deleteFollowStmt.executeUpdate();
-                // decrementFollowingStmt.executeUpdate();
-                // decrementFollowersStmt.executeUpdate();
     
                 connection.commit();
                 return true;
