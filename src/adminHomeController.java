@@ -499,6 +499,13 @@ private void displayUserFollowTable() {
             alert.showAndWait();
             return;
         }
+
+        if (DatabaseHandler.getInstance().emailExists(addemail)) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Email already exists");
+            alert.showAndWait();
+            return;
+        }
     
         if (addpassword.length() == 0) {
             Alert alert = new Alert(Alert.AlertType.ERROR);

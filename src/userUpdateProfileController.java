@@ -112,6 +112,13 @@ public class userUpdateProfileController {
             return;
         }
 
+        if (DatabaseHandler.getInstance().emailExists(email)) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Email already exists");
+            alert.showAndWait();
+            return;
+        }
+
         String lowerCasePronoun = pronoun.toLowerCase();
         if (!lowerCasePronoun.equals("he/him") && !lowerCasePronoun.equals("she/her") && !lowerCasePronoun.equals("they/them")) {
             Alert alert = new Alert(Alert.AlertType.ERROR);

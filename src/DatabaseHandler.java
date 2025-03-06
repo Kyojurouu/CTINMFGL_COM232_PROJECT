@@ -420,6 +420,20 @@ public class DatabaseHandler {
         return false;
     }
 
+    public boolean emailExists(String email) {
+        String query = "SELECT COUNT(*) FROM tiktokUsers WHERE Email = ?";
+        try (PreparedStatement preparedStatement = getDBConnection().prepareStatement(query)) {
+            preparedStatement.setString(1, email);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                return resultSet.getInt(1) > 0;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+    
     public boolean followExists(String userNameID, String followUserNameID) {
         String query = "SELECT COUNT(*) FROM tiktokUserFollow WHERE UserNameID = ? AND FollowUserNameID = ?";
         try (Connection connection = getDBConnection();
