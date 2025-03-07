@@ -521,13 +521,13 @@ private void displayUserFollowTable() {
             return;
         }
 
-        String addlowerCasePronoun = addpronoun.toLowerCase();
-        if (!addlowerCasePronoun.equals("he/him") && !addlowerCasePronoun.equals("she/her") && !addlowerCasePronoun.equals("they/them")) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Pronoun must be 'He/Him', 'She/Her', or 'They/Them'");
-            alert.showAndWait();
-            return;
-        }
+        // String addlowerCasePronoun = addpronoun.toLowerCase();
+        // if (!addlowerCasePronoun.equals("he/him") && !addlowerCasePronoun.equals("she/her") && !addlowerCasePronoun.equals("they/them")) {
+        //     Alert alert = new Alert(Alert.AlertType.ERROR);
+        //     alert.setContentText("Pronoun must be 'He/Him', 'She/Her', or 'They/Them'");
+        //     alert.showAndWait();
+        //     return;
+        // }
 
         tiktokUsers tiktokUsers = new tiktokUsers(adduserName, addfirstName, addlastName, addemail, addpassword, addpronoun, 0, 0);
 

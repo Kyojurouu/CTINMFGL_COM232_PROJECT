@@ -19,15 +19,15 @@
       </ImageView>
       <TableView fx:id="userFollowUserTable" layoutX="54.0" layoutY="129.0" prefHeight="200.0" prefWidth="242.0">
         <columns>
-          <TableColumn fx:id="FollowIDCol" prefWidth="39.99996566772461" text="Follow ID" />
-          <TableColumn fx:id="userNameIDFollowCol" prefWidth="100.00003051757812" text="UserNameID" />
+          <TableColumn fx:id="FollowIDCol" minWidth="0.79998779296875" prefWidth="0.79998779296875" text="Follow ID" />
+          <TableColumn fx:id="userNameIDFollowCol" prefWidth="140.0" text="UserNameID" />
             <TableColumn fx:id="otherUserNameIDFollowCol" prefWidth="103.99995422363281" text="UserNameID" />
         </columns>
       </TableView>
       <TableView fx:id="userFollowerTable" layoutX="53.0" layoutY="339.0" prefHeight="200.0" prefWidth="242.0">
         <columns>
-          <TableColumn fx:id="FollowerIDCol" prefWidth="42.4000244140625" text="Follow ID" />
-          <TableColumn fx:id="followerUserNameIDCol" prefWidth="96.79999542236328" text="UserNameID" />
+          <TableColumn fx:id="FollowerIDCol" minWidth="0.0" prefWidth="0.0" text="Follow ID" />
+          <TableColumn fx:id="followerUserNameIDCol" prefWidth="140.0" text="UserNameID" />
             <TableColumn fx:id="followerFollowUserNameIDCol" prefWidth="101.5999755859375" text="UserNameID" />
         </columns>
       </TableView>

@@ -20,6 +20,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
+import javafx.scene.control.Label;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class tiktokHomePageController {
     
@@ -61,6 +64,9 @@ public class tiktokHomePageController {
 
     @FXML
     private Button gotoTiktokButton;
+
+    @FXML
+    private Label timeLabel;
 
     ObservableList<tiktokUsersPost> tiktokUsersPost = FXCollections.observableArrayList();
 
@@ -129,6 +135,8 @@ public class tiktokHomePageController {
         initializeCol();
         displaytiktokUsersPost();
         GreetingsUsernameLabel.setText(SessionManager.getInstance().getCurrentUserName());
+        String currentTime = new SimpleDateFormat("hh:mm:ss a").format(new Date()); 
+        timeLabel.setText(currentTime);
     }
 
     public void initializeCol() {

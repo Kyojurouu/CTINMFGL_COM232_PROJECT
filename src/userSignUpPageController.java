@@ -122,13 +122,13 @@ public class userSignUpPageController {
             return;
         }
 
-        String lowerCasePronoun = pronoun.toLowerCase();
-        if (!lowerCasePronoun.equals("he/him") && !lowerCasePronoun.equals("she/her") && !lowerCasePronoun.equals("they/them")) {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setContentText("Pronoun must be 'He/Him', 'She/Her', or 'They/Them'");
-            alert.showAndWait();
-            return;
-        }
+        // String lowerCasePronoun = pronoun.toLowerCase();
+        // if (!lowerCasePronoun.equals("he/him") && !lowerCasePronoun.equals("she/her") && !lowerCasePronoun.equals("they/them")) {
+        //     Alert alert = new Alert(AlertType.ERROR);
+        //     alert.setContentText("Pronoun must be 'He/Him', 'She/Her', or 'They/Them'");
+        //     alert.showAndWait();
+        //     return;
+        // }
 
         tiktokUsers tiktokUsers = new tiktokUsers(userName, Fname, Lname, email, password, pronoun, 0, 0);
 
